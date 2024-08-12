@@ -1,0 +1,5 @@
+# API KEY
+rest_api_weather/credentials.py
+
+# virtual env
+weather_rest_api/*

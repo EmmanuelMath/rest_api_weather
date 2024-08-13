@@ -1,11 +1,14 @@
 # WEATHER API SET UP 
 
-### Set Uo A Virtual Env
+### Set Up A Virtual Env and API KEY
 Navigate to main folder
 ```
 python3 -m venv virtualenv_name
 
 ```
+
+**Create a credentials.py file to store your API_KEY**
+
 ### Install dependencies 
 ```
  'pip install  -r requirements.txt'
@@ -31,3 +34,11 @@ python weather_rest_api.py
 python test_main_api.py 
 
 ```
+
+
+## Room for improvement
+
+- build a ci/cd pipeline with Github actions using YAML file 
+- create a user interface where users can provide required data
+- organise files in folders such as sources/ tests/
+- implement an algorithm to reformat dates in case a user uses a different format

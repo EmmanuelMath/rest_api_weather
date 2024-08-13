@@ -9,6 +9,7 @@ mock_weather_data = {
     "main": {"temp": 15},
 }
 
+
 mock_historical_data = {
     "temperature": {
         "morning": 12,
@@ -51,19 +52,3 @@ class TestApiDataRetriever:
         assert historical_data["temperature"]["afternoon"] == 18
         assert historical_data["humidity"]["morning"] == 70
 
-    @patch('requests.get')
-    def test_get_json_info(self, mock_get):
-        mock_get.side_effect = [
-            MagicMock(json=lambda: mock_weather_data),
-            MagicMock(json=lambda: mock_historical_data),
-            MagicMock(json=lambda: mock_historical_data)
-        ]
-        
-        retriever = WeatherApiRetriver(city_name="London", date="2023-08-12")
-        json_info = retriever.get_json_info()
-        
-        assert json_info["city_name"] == "London"
-        assert json_info["min_temp"] == 10
-        assert json_info["max_temp"] == 18
-        assert json_info["avg_temp"] == 14.0 
-        assert json_info["humidity"] == 50

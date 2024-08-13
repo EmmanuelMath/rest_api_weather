@@ -3,8 +3,8 @@ import requests
 
 app = Flask(__name__)
 
-@app.route('/test-weather-api', methods=['GET'])
-def test_weather_api():
+@app.route('/weather-api-test', methods=['GET'])
+def weather_api_test():
     city = request.args.get('city')
     date = request.args.get('date')
     

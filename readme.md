@@ -18,8 +18,8 @@ python3 -m venv virtualenv_name
 
 **The main API requires two parameters as follow:**
 
-    - The name of a city 
-    - A date in YYYY-MM-DD format
+- The name of a city 
+- A date in YYYY-MM-DD format
 
 _To test the main API using a test API:_
 

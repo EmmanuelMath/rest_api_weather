@@ -39,10 +39,17 @@ python test_main_api.py
 ## Room for improvement
 
 - build a ci/cd pipeline with Github actions using YAML file 
-- create a user interface where users can provide required data
+- create a user interface where users can provide required data (using Streamlit maybe)
 - organise files in folders such as sources/ tests/
 - create a file per class for isolation 
 - implement an algorithm to reformat dates in case a user uses a different format
 - create unit tests report using pytest reporting and integrate it to ci/cd
 - proof test every single functions 
 - refactor the code and make it more concise 
+
+## Resources 
+
+- https://flask.palletsprojects.com/en/3.0.x/
+- https://docs.python.org/3/library/unittest.html
+- https://docs.pytest.org/en/7.1.x/contents.html
+- https://openweathermap.org/api/one-call-3
